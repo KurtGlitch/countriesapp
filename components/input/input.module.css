@@ -1,0 +1,14 @@
+
+.input{
+    border: none;
+    margin-left: 1rem;
+    background-color: inherit;
+    color: inherit;
+    width: 100%;
+
+}
+
+.input:focus{
+    outline: none;
+    
+}

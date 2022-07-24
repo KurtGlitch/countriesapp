@@ -1,16 +1,101 @@
-html,
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root{
+  --container-width-lg:80%;
+  --container-width-sm: 90%;
+
+  --fs-homepage: 0.875rem;
+  --fs-detailsPage: 1rem;
+
+  --fw-300:300;
+  --fw-600:600;
+  --fw-800:800;
+
+  --colr-darkblue:hsl(209, 23%, 22%);
+  --colr-mdarkblue-bg:hsl(207, 26%, 17%);
+  --colr-vdarkblue:hsl(200, 15%, 8%);
+  --colr-darkgrey:hsl(0, 0%, 52%);
+  --colr-lightgrey:hsl(0, 0%, 98%);
+  --colr-white:hsl(0, 0%, 100%);
+
+  /* --clr-darkModeElements: var(--colr-darkblue);
+  --clr-darkModeBackground: var(--colr-mdarkblue-bg);
+  --clr-lightModeText: var(--colr-vdarkblue);
+  --clr-lightModeInput: var(--colr-darkgrey);
+  --clr-lightModeBackground: var(--colr-lightgrey);
+  --clr-darkModeTextLightModeElements: var(--colr-white); */
+
+
+  
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0; 
+}
+
+/* set up the body */
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    line-height: 1.5;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
 }
 
-* {
-  box-sizing: border-box;
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.title{
+  font-size: var(--fs-homepage);
+}
+
+.container{
+  width: var(--container-width-sm);
+  margin: 0 auto;
+}
+
+.inline{
+  display: inline;
 }
