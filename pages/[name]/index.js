@@ -6,7 +6,7 @@ export const getStaticPaths = async () => {
 
 function index() {
   return (
-    <div></div>
+    <div>Hello Botswana</div>
   )
 }
 

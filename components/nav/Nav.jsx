@@ -7,7 +7,9 @@ import {BsSunFill} from 'react-icons/bs'
 
 function Nav(props) {
   const nav = {
-    backgroundColor:props.theme?'hsl(0, 0%, 98%)' :"hsl(209, 23%, 22%)"
+    backgroundColor:props.theme?'hsl(0, 0%, 98%)' :"hsl(209, 23%, 22%)",
+    position:"sticky",
+    top:"0",
   }
   return (
     <nav style={nav}>

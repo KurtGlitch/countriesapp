@@ -21,7 +21,6 @@ export default function Home({data}) {
   const handleInput = (event) => {
     let{value} = event.target
     setFormInputs(value) 
-    console.log(value)
   }
 
 
